@@ -1,0 +1,74 @@
+@import "../style/_fonts.scss";
+@import "../style/_colors.scss";
+
+.homepage {
+  width: 98vw;
+  height: 100vh;
+  display: flex;
+  .homepage_banner{
+    width: 30%;
+    height: 100%;
+  }
+  .homepage_info{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 2rem 3rem;
+    gap: 1.5rem;
+    .homepage_login{
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      font-family: $primary-font-style;
+      font-size: 0.8rem;
+      text-align: right;
+      color: $underline-color;
+      margin-right: 1rem;
+      .homepage_login-element {
+        border: 1px transparent solid;
+        padding: 0.5rem;
+        &:hover {
+          border: 1px $create-account-border solid;
+        }
+      }
+    }
+    .homepage_nav{
+      display: flex;
+      justify-content: flex-end;
+      gap: 4rem;
+      text-align: left;
+      font-size: 1.2rem;
+      font-family: $primary-font-style;
+      color: $primary-font-color;
+      margin-right: 1rem;
+    }
+    .homepage_quote{
+      margin-top: 10rem;
+      font-size: 2.5rem;
+      text-align: center;
+      color: $primary-font-color;
+    }
+    .homepage_buttons{
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+      margin-top: 2rem;
+      .homepage_buttons-elements{
+        width: 8rem;
+        height: 4rem;
+        border: 1px $primary-font-color solid;
+        color: $primary-font-color;
+        text-align: center;
+        font-family: $primary-font-style;
+        font-weight: 300;
+        box-sizing: border-box;
+        padding: 1rem;
+      }
+    }
+  }
+  .homepage_details{
+    background-image: url("");
+  }
+}
